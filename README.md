@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Frontend NextJS
 
-## Getting Started
+O projeto consiste em dashboard para o controle interno.
 
-First, run the development server:
+## Preview
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<img src="./docs/assets/preview-desktop.gif" width="100%">
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Como Iniciar?
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+1.  **Faça o clone do repositório.**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    ```
+      git clone https://github.com/geraldobl58/ignite-dashgo.git
+    ```
 
-## Learn More
+2.  **Instalação das dependências**
 
-To learn more about Next.js, take a look at the following resources:
+   execute na pasta do projeto o seguinte comando:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```npm install ou yarn
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    após a instalação execute o seguinte comando.
 
-## Deploy on Vercel
+    ```npm run dev ou yarn dev
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3.  **Verificando no navegador**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    O projeto vai executar no seguinte endereço: `http://localhost:3000`
+
+## Techs
+
+ - [x] [React](https://pt-br.reactjs.org/)
+ - [x] [Typescript](https://pt-br.reactjs.org/)
+ - [x] [NextJS](https://nextjs.org/)
+ - [x] [Chakra UI](https://chakra-ui.com/)
+ - [x] [Emotion](https://emotion.sh/docs/styled)
+ - [x] [Apexcharts](https://apexcharts.com/)
+ - [x] [Framer Motion](https://www.framer.com/motion/)
+ - [x] [Yup](https://github.com/jquense/yupp)
+ - [x] [React Hook Form](https://react-hook-form.com/)
+ - [x] [React Icons](https://react-icons.github.io/react-icons/)
+
+## Diretórios
+
+Estrutura do projeto.
+
+    .
+    ├── node_modules
+    ├── src
+    ├──────── components
+    ├──────── contexts
+    ├──────── pages
+    ├──────── styles
+    ├── .gitignore
+    ├── .prettierrc
+    ├── .editorconfig
+    ├── .eslint.js
+    ├── package.json
+    └── README.md
+
+1.  **`/node_modules`**: Este diretório contém todos os módulos de código dos quais seu projeto depende (pacotes npm) são instalados automaticamente.
+
+2.  **`/src`**: Este diretório conterá todo o código relacionado ao que você verá no front-end do site (o que você vê no navegador), como o cabeçalho do site ou um modelo de página. `src` é uma convenção para "código fonte ".
+
+3.  **`.gitignore`**: Este arquivo informa ao git quais arquivos ele não deve rastrear / não manter um histórico de versão.
+
+4.  **`.prettierrc`**: Este é um arquivo de configuração para Prettier é uma ferramenta para ajudar a manter a formatação do código consistente e para manter um padrão. [Prettier](https://prettier.io/).
+
+5.  **`.eslint.json`**: ESLint é uma ferramenta de análise de código estática para identificar padrões problemáticos encontrados no código JavaScript. [Eslint](https://eslint.org/).
+
+6.  **`.editorconfig`**: O EditorConfig ajuda a manter estilos de codificação consistentes para vários desenvolvedores que trabalham no mesmo projeto em vários editores e IDEs. [Editorconfig](https://editorconfig.org/)
+
+7. **`package-lock.json`** Este é um arquivo gerado automaticamente com base nas versões exatas das dependências do npm que foram instaladas para o seu projeto. ** (Você não altera este arquivo diretamente)**
+
+8. **`package.json`**: Um arquivo é executado para projetos Node.js, que inclui itens como metadados (nome, autor do projeto etc.). Este arquivo é como o npm sabe quais pacotes instalar para o seu projeto.
